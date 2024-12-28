@@ -1,23 +1,76 @@
-# Streamlit-Sentiment-Analysis
+# Sentiment Scholar
 
-IMP: Make sure all packages are installed in your local system before running the program.
+A comprehensive sentiment analysis platform featuring multiple analysis modules powered by modern language models and web scraping capabilities.
 
-1. This project is called Sentiment Scholar - a sentiment analysis bot.
+## 🌟 Features
 
-2. It has 3 different modules - Direct, Chatbot and web-scrapping modules.
+### Three Powerful Modules
 
-Direct Module: uses a <.csv> file and compares BERT NLP, ChatGPT, and Gemini LLMs. (Note that all models are pre-trained) 
+1. **Direct Analysis Module**
+   - Compares sentiment analysis results across multiple models:
+   - BERT NLP (pre-trained)
+   - ChatGPT
+   - Google Gemini
+   - Accepts CSV files as input for batch processing
 
-Chatbot Module: Uses ChatGPT to make a sentiment analysis AI bot. 
+2. **Chatbot Module**
+   - Interactive sentiment analysis through a ChatGPT-powered conversational interface
+   - Real-time analysis and feedback
 
-Web scrapping Module: Web-scrapes YouTube Comments and Websites. 
+3. **Web Scraping Module**
+   - Extract and analyze sentiments from:
+   - YouTube comments
+   - Website content
+   - Automated data collection and processing
 
-3. Please make sure that all files are present on your system if you are running the website.
+## ⚙️ Prerequisites
 
-4. IMP: Ensure you have entered the API for ChatGPT and Gemini LLMs in the config.json file. Without this, most of the programs will not work. 
+Before running the application, ensure you have:
 
-5. If there is a JSON error, please refresh the page. This error is common when <json> and ChatGPT are used together. 
+- All required Python packages installed
+- Valid API keys for:
+  - OpenAI (ChatGPT)
+  - Google Gemini
+- All project files downloaded to your local system
 
-6. To run the streamlit app, go to Home.py file, open the terminal and run the command - 'streamlit run Home.py'
+## 🚀 Installation & Setup
 
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/streamlit-sentiment-analysis.git
+cd streamlit-sentiment-analysis
+```
 
+2. Install required packages:
+```bash
+pip install -r requirements.txt
+```
+
+3. Configure API keys:
+   - Open `config.json`
+   - Add your API keys:
+   ```json
+   {
+     "openai_key": "your-chatgpt-api-key",
+     "gemini_key": "your-gemini-api-key"
+   }
+   ```
+
+## 🎯 Usage
+
+1. Launch the Streamlit app:
+```bash
+streamlit run Home.py
+```
+
+2. Navigate through the different modules using the sidebar menu
+
+## ⚠️ Known Issues & Troubleshooting
+
+- If you encounter a JSON error when using ChatGPT and Gemini simultaneously, try refreshing the page
+- Ensure all API keys are correctly configured in `config.json` before running any analysis
+- Verify all required files are present in your local system before launching the application
+
+## 📝 License
+
+MIT License
