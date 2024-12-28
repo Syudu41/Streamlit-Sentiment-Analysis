@@ -1,0 +1,8 @@
+[theme]
+primaryColor="#00B4D8"        # Bright blue
+backgroundColor="#0A1929"     # Deep navy
+secondaryBackgroundColor="#132F4C"  # Medium navy
+textColor="#F0F9FF"
+
+[server]
+runOnSave = true
