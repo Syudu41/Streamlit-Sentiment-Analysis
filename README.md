@@ -8,7 +8,7 @@ A comprehensive sentiment analysis platform featuring multiple analysis modules 
 
 1. **Direct Analysis Module**
    - Compares sentiment analysis results across multiple models:
-   - BERT NLP (pre-trained)
+   - BERT NLP (pre-trained) - from Hugging Face `nlptown`
    - ChatGPT
    - Google Gemini
    - Accepts CSV files as input for batch processing
