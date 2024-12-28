@@ -1,0 +1,174 @@
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* Override Streamlit's default font settings */
+.css-1c7y2kd {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Main container styling */
+div.block-container.css-z5fcl4.egzxvld4 {
+    width: 100%;
+    min-width: auto;
+    max-width: initial;
+    padding: 2rem 5rem;
+    background: linear-gradient(180deg, #040407 0%, #0F1117 100%);
+}
+
+/* Global font settings */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+}
+
+/* Specific heading overrides */
+.css-10trblm {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Main header */
+h1, .st-emotion-cache-10trblm {
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 2.5rem !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* Secondary headers */
+h2, .st-emotion-cache-jkl0ee {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    color: #FFFFFF !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Subheaders */
+h3, h4, h5, 
+.st-emotion-cache-5rimss,
+.st-emotion-cache-4z1n4l {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 500 !important;
+    color: #FFFFFF !important;
+    letter-spacing: 0 !important;
+}
+
+/* Header styling */
+header {
+    font-family: 'Space Grotesk', sans-serif !important;
+    background: linear-gradient(90deg, #FFFFFF 0%, #64FFDA 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+/* Rest of your existing CSS */
+.markdown-text-container {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.stButton button {
+    background-color: rgba(100, 255, 218, 0.1) !important;
+    color: #64FFDA !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    padding: 0.75em 1.5em !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(100, 255, 218, 0.2) !important;
+    transition: all 0.2s ease !important;
+}
+
+.stButton button:hover {
+    background-color: rgba(100, 255, 218, 0.15) !important;
+    border-color: rgba(100, 255, 218, 0.4) !important;
+}
+
+/* Input field styling */
+.stTextInput > div > div {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stTextInput > div > div:focus-within {
+    border-color: #64FFDA !important;
+    box-shadow: 0 0 0 1px #64FFDA !important;
+}
+
+/* Number input styling */
+.stNumberInput > div > div {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 8px !important;
+}
+
+.stNumberInput > div > div:focus-within {
+    border-color: #64FFDA !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background-color: #64FFDA !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 255, 218, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 255, 218, 0.5);
+}
+
+/* Add subtle glow to accent elements */
+.element-container {
+    position: relative;
+}
+
+.element-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(100, 255, 218, 0.1), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Links */
+a {
+    color: #64FFDA !important;
+    text-decoration: none !important;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Add subtle gradient to dividers */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.2), transparent);
+}
